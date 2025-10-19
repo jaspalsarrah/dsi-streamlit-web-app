@@ -5,7 +5,7 @@ import pandas as pd
 import joblib
 
 # load model pipeline object
-model = joblib.load("C:/Users/jsarrah/OneDrive - Capgemini/Desktop/DSI/Machine Learning/Model Building/data/model.joblib")
+model = joblib.load("model.joblib")
 
 # add title and instructions
 st.title("Purchase Prediction Model")
@@ -45,4 +45,5 @@ if st.button("Submit For Prediction"):
     
     # output prediction
     st.subheader(f"Based on these customer attributes, our model predicts a purchase probability of {pred_proba:.0%}")
+
 
